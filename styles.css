@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 4.4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.img_div {
+  width: 30rem;
+}
