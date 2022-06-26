@@ -13,9 +13,10 @@ const apiData = fetch(api_url)
       console.log(element);
 
       const newDiv = document.createElement("div");
+
       newDiv.innerHTML = `
-        <img class = "img_div" src = '${img_path + element.poster_path}'
-      <h3 class="title" >${actualData[i].title}</h3>
+        <img class = "img_div" src = '${img_path + element.poster_path}' />
+        <h3 class="title" >${actualData[i].title}</h3>
       `;
       appContainer.appendChild(newDiv);
     }

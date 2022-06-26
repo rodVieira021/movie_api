@@ -4,21 +4,70 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-h2 {
+.header_text {
   text-transform: uppercase;
   text-align: center;
-  margin-top: 5rem;
-  font-size: 4.4rem;
+  padding: 50px 0;
+  font-size: 44px;
+}
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(6, 280px);
+  column-gap: 20px;
+  row-gap: 50px;
+  min-width: 320px;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 25px;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .img_div {
-  width: 30rem;
+  width: 100%;
 }
+
+@media (min-width: 1396px) and (max-width: 1820px) {
+  .app {
+    grid-template-columns: repeat(5, 260px);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1395px) {
+  .app {
+    grid-template-columns: repeat(4, 235px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .app {
+    grid-template-columns: repeat(2, 220px);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .app {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
